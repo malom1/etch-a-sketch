@@ -22,5 +22,15 @@ function hoverEffect(div) {
     });
 }
 
-newGrid(16,16);
+btn.addEventListener("click", () => {
+    let row = parseInt(prompt("Enter the number of rows and columns: "));
+    let column = row;
+    if(row > 0 && row < 100){
+        newGrid(row, column);
+    } else {
+        alert("Enter valid numbers!");
+    }
+});
+
+newGrid(16, 16);
 
