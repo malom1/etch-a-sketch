@@ -11,7 +11,15 @@ function newGrid(row, column){
         div.style.height = `${100 / row}%`;
 
         container.appendChild(div);
+        hoverEffect(div);
     }
+}
+
+function hoverEffect(div) {
+    div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = 'black';
+        div.style.color ='white'
+    });
 }
 
 newGrid(16,16);
